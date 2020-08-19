@@ -1,10 +1,11 @@
 package com.huangda7.designpattern.builder;
-//生产出来的产品，可以看做是一栋楼
-public class Product {
-    private String buildA;
-    private String buildB;
-    private String buildC;
-    private String buildD;
+
+//与普通的建造者模式不同在于，产品有自己的默认值，用户可以根据自己的需求改变产品的属性
+public class Product1 {
+    private String buildA="全家桶";
+    private String buildB="汉堡";
+    private String buildC="薯条";
+    private String buildD="可乐";
 
     public String getBuildA() {
         return buildA;
@@ -40,7 +41,7 @@ public class Product {
 
     @Override
     public String toString() {
-        return "Product{" +
+        return "Product1{" +
                 "buildA='" + buildA + '\'' +
                 ", buildB='" + buildB + '\'' +
                 ", buildC='" + buildC + '\'' +
