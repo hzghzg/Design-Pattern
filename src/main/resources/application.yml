@@ -1,0 +1,4 @@
+#spring:
+#  aop:
+#    auto: true #是否开启切面自动代理
+#    proxy-target-class: false # false表示使用JDK自带的代理，为true表示使用CGLIB的代理
